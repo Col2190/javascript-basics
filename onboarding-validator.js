@@ -9,3 +9,5 @@ for(let i =0; i<onboardings.length; i++) {
     console.log("Onboarding ready")}
     else {console.log("Onboarding not ready");}
 }
+
+

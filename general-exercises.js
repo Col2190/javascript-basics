@@ -372,3 +372,86 @@ for(let i = 0; i<responses.length; i++) {
     }
     else {console.log("Erro");}
     }
+    /////
+
+    let apiCount = [200, 500, 404, 200];
+let errorCount = 0;
+
+for(let i = 0; i<apiCount.length; i++) {
+    if(apiCount[i] !== 200) {errorCount++}
+}
+console.log("Total errors: " + errorCount);
+////
+
+//para contar
+let apiCount = [200, 500, 404, 200];
+let errorCount = 0;
+
+for(let i = 0; i<apiCount.length; i++) {
+    if(apiCount[i] !== 200) {errorCount++}
+}
+console.log("Total errors: " + errorCount);
+
+////
+
+let users = ["active", "inactive", "inactive", "active"];
+let countUsers = 0;
+
+for(let i = 0; i<users.length; i++){
+    if(users[i]!== "active") {countUsers++}
+}
+console.log("inactive users : " + countUsers);
+
+///////////
+
+
+let time = [120, 300, 80, 450];
+let responseTime = 0;
+
+for(let i = 0; i<time.length; i++) {
+    if(time[i] > 200) {responseTime++};
+}
+console.log("total slow responses: " + responseTime);
+
+///////
+
+let statuses = ["ASSIGNED", "FAILED", "FAILED", "PENDING"];
+let count = 0;
+
+for(let i = 0; i<statuses.length; i++) {
+    if(statuses[i] === "FAILED") {count++};
+}
+
+console.log("Total filed onboardings: " + count);
+
+
+////
+
+let logins = ["success", "fail", "fail", "success", "fail"];
+let x = 0;
+let y = 0;
+
+for(let i = 0; i<logins.length; i++) {
+if(logins[i] === "success") {x++}
+else {y++;}
+}
+
+console.log("success: " + x);
+console.log("fail: " + y); 
+////////////
+
+let orders = ["delivered", "pending", "delivered", "cancelled", "pending"];
+let del = 0;
+let pen = 0;
+let can = 0;
+
+for(let i = 0; i<orders.length; i++) {
+    if(orders[i] === "delivered") {del++}
+    else if(orders[i] === "pending") {pen++;}
+    else if(orders[i] === "cancelled") {can++;}
+}
+console.log("Delivered: " + del);
+console.log("Pending: " + pen);
+console.log("Cancelled: " + can);
+
+////

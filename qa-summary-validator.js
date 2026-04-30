@@ -11,3 +11,4 @@ for(let i = 0; i<responses.length; i++){
 
 console.log("Total successful responses: " + successCount);
 console.log("Total errors: " + errorCount);
+
