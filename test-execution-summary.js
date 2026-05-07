@@ -8,6 +8,10 @@ for(let i = 0; i<testResults.length; i++){
     else if(testResults[i] === "fail") {totalFailed++}
     else if(testResults[i] === "blocked") {totalBlocked++}
 }
+
+if(totalFailed > 2) {console.log("System unstable")}
+else {console.log("System stable")};
+
 console.log("Total passed: " + totalPass);
 console.log("Total failed: " + totalFailed);
 console.log("total blocked " + totalBlocked);
